@@ -11,6 +11,6 @@ package com.mycompany.mavenproject;
  */
 public class MavenProjectMain {
     public static void main(String[] args) {
-        
+        System.out.println("Working without errors");
     }
 }
