@@ -14,6 +14,9 @@ class Calculadora {
         if (vetor == null) {
             throw new NullPointerException();
         }
+        if (vetor.length == 0) {
+            throw new IllegalArgumentException();
+        }
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
