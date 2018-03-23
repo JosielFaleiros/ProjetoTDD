@@ -54,5 +54,11 @@ public class CalculadoraTest {
         double[] vetor = {3, 5, 6, 8, 9, 12, 15};
         assertEquals(8.0, calc.calcMediana(vetor), 0.01);
     }
+    
+    @Test
+    public void medianaImparQuantidadeTest() {
+        double[] vetor = {3, 5, 6, 8, 9, 12, 15, 16};
+        assertEquals(8.5, calc.calcMediana(vetor), 0.01);
+    }
 
 }
