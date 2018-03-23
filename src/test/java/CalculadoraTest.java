@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import java.util.EmptyStackException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -37,9 +38,15 @@ public class CalculadoraTest {
     public void tearDown() {
     }
 
-
     @Test(expected = NullPointerException.class)
     public void medianaTestNulo() {
         assertEquals(0.0, calc.calcMediana(null), 0.01);
     }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void medianaVaziaTest() {
+        double[] vetor = {};
+        assertEquals(0.0, calc.calcMediana(vetor), 0.01);
+    }
+
 }
