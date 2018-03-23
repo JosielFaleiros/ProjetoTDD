@@ -24,6 +24,6 @@ class Calculadora {
         if (vetor.length%2 != 0) {
             return vetor[vetor.length / 2];
         }
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (vetor[(vetor.length / 2) - 1] + vetor[vetor.length / 2]) / 2;
     }
 }
